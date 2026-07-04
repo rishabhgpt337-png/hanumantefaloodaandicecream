@@ -2610,9 +2610,7 @@ img {
     .menu-toggle {
         display: flex;
     }
-    .sticky-bottom-navbar {
-        display: flex; /* Activate sticky bar on mobile */
-    }
+
     
     /* Locations mobile scroll snap horizontal swipe */
     .locations-layout {
@@ -2635,7 +2633,8 @@ img {
         background: var(--saffron-orange);
         border-radius: 5px;
     }
-    .location-card {
+    .location-card,
+    .other-locations-box {
         min-width: 85%;
         scroll-snap-align: center;
         flex-shrink: 0;
