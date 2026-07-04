@@ -58,6 +58,7 @@ html {
     scroll-behavior: smooth;
     font-size: 16px;
     -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
 }
 
 body {
@@ -2610,44 +2611,48 @@ img {
     .menu-toggle {
         display: flex;
     }
-
     
-    /* Locations mobile scroll snap horizontal swipe */
+    /* Stacking location cards vertically to fit viewport on mobile */
     .locations-layout {
         grid-template-columns: 1fr;
         gap: 20px;
     }
     .locations-list.swipe-scroll-container {
-        flex-direction: row;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        padding-bottom: 20px;
+        flex-direction: column;
+        overflow-x: visible;
+        overflow-y: visible;
+        scroll-snap-type: none;
+        padding-bottom: 0;
         padding-right: 0;
         max-height: none;
+        gap: 20px;
     }
     .locations-list.swipe-scroll-container::-webkit-scrollbar {
-        height: 5px;
-    }
-    .locations-list.swipe-scroll-container::-webkit-scrollbar-thumb {
-        background: var(--saffron-orange);
-        border-radius: 5px;
+        display: none;
     }
     .location-card,
     .other-locations-box {
-        min-width: 85%;
-        scroll-snap-align: center;
-        flex-shrink: 0;
+        min-width: 0;
+        width: 100%;
+        scroll-snap-align: none;
+        flex-shrink: 1;
     }
-    .map-view-container {
-        min-height: 320px;
-        border-radius: 20px;
+    
+    /* Hiding inline Google Maps previews on mobile */
+    .map-view-container,
+    .footer-col-map {
+        display: none !important;
     }
+    
     .reviews-container {
         grid-template-columns: 1fr;
     }
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
