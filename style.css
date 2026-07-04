@@ -516,7 +516,7 @@ img {
 .mobile-drawer {
     position: fixed;
     top: 0;
-    right: -320px;
+    right: -300px;
     width: 300px;
     height: 100%;
     background-color: var(--cream-light);
@@ -525,10 +525,12 @@ img {
     display: flex;
     flex-direction: column;
     transition: right var(--transition-smooth);
+    visibility: hidden;
 }
 
 .mobile-drawer.open {
     right: 0;
+    visibility: visible;
 }
 
 .drawer-header {
@@ -2653,6 +2655,23 @@ img {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    
+    /* Responsive Contact and Catering boxes styling (preventing horizontal viewport overflow) */
+    .contact-info-card,
+    .catering-box {
+        padding: 24px;
+        gap: 20px;
+    }
+    .insta-card-info {
+        min-width: 0;
+    }
+    .insta-card-handle {
+        word-break: break-all;
+    }
+    .c-text p,
+    .c-text a {
+        word-break: break-word;
     }
 }
 
