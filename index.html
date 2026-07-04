@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hanumante Special Faluda & Cold Coco - Mumbai's premium 26-year-old dessert brand. Famous for curated falooda, original cold coco, and premium shakes. Outlets across Mulund, Malad, Dadar, and Thane. Since 1999.">
+    <meta name="keywords" content="Hanumante Falooda, Hanumante Cold Coco, Best Falooda in Mumbai, Mulund Dessert, Thane Cold Coco, Premium Dessert Mumbai, Since 1999">
+    <meta name="author" content="Hanumante Special Faluda">
+    
+    <!-- Open Graph (Facebook/Instagram/LinkedIn) -->
+    <meta property="og:title" content="Hanumante Special Faluda & Cold Coco | Premium Mumbai Dessert Brand">
+    <meta property="og:description" content="Savor the legacy! Voted Mumbai's favorite dessert brand with curated premium falooda varieties, legendary cold coco, and badam shake. Since 1999.">
+    <meta property="og:image" content="assets/falooda_hero.png">
+    <meta property="og:type" content="website">
+
+    <title>Hanumante Special Faluda & Cold Coco | Premium Dessert Brand Since 1999</title>
+    
+    <!-- Google Fonts: Inter (Body), Fredoka (Headings), Caveat & Kalam (Handwritten accents) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Fredoka:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CSS Grain Overlay and Blob Lights -->
+    <div class="grain-overlay"></div>
+    <div class="abstract-blob blob-orange-1"></div>
+    <div class="abstract-blob blob-orange-2"></div>
+    <div class="abstract-blob blob-pink-1"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#home" class="logo-area" id="logo-link">
+                <!-- Premium Logo Motif SVG (Custom hand-drawn falooda swirl glass) -->
+                <svg viewBox="0 0 100 120" width="34" height="40" class="tilak-logo-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M42 35 L30 10 L24 12" />
+                    <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                    <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                    <path d="M41 96 L33 104 L67 104 L59 96" />
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-brand">HANUMANTE <span class="logo-accent">Special</span></span>
+                    <span class="logo-sub">Falooda & Cold Coco</span>
+                </div>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#locations" class="nav-link">Locations</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://maps.app.goo.gl/LnNvMhMv39eAqTy7A" target="_blank" rel="noopener noreferrer" class="btn btn-terracotta btn-nav-cta">Visit Us</a>
+                <button class="menu-toggle" aria-label="Toggle Menu" id="menu-toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobile-drawer-menu">
+        <div class="drawer-header">
+            <div class="logo-area">
+                <svg viewBox="0 0 100 120" width="30" height="35" class="tilak-logo-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M42 35 L30 10 L24 12" />
+                    <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                    <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                    <path d="M41 96 L33 104 L67 104 L59 96" />
+                </svg>
+                <div class="logo-text">
+                    <span class="logo-brand">HANUMANTE</span>
+                </div>
+            </div>
+            <button class="drawer-close" id="drawer-close-btn">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#home" class="drawer-link">Home</a>
+            <a href="#menu" class="drawer-link">Menu</a>
+            <a href="#locations" class="drawer-link">Locations</a>
+            <a href="#about" class="drawer-link">About Us</a>
+            <a href="#contact" class="drawer-link">Contact Us</a>
+        </nav>
+        <div class="drawer-footer">
+            <p>Order or Inquiry Helpline</p>
+            <a href="tel:7878747024" class="btn btn-saffron width-100"><i class="fa fa-phone"></i> 7878747024</a>
+        </div>
+    </div>
+    <div class="drawer-backdrop" id="drawer-backdrop-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="home" class="hero-section">
+            <div class="hero-pattern-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-row hero-premium-badge">
+                        <span class="badge badge-premium-gold"><i class="fa-solid fa-sparkles"></i> Since 1999</span>
+                        <span class="badge badge-premium-white">Devotional Warmth</span>
+                    </div>
+                    <h1 class="hero-title">26 Years of <br><span class="hero-handwritten-highlight">Happiness</span></h1>
+                    <p class="hero-subtitle">Mumbai's favourite Falooda & original Cold Coco destination. Crafted from slow-boiled rabri, premium syrups, and pure chocolate ingredients. <em>Ek baar khana hi padega!</em></p>
+                    
+                    <div class="store-status-bar hero-store-status" id="live-status-container">
+                        <span class="status-dot green" id="status-dot"></span>
+                        <span class="status-text" id="status-text">Checking outlets...</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="https://maps.app.goo.gl/LnNvMhMv39eAqTy7A" target="_blank" rel="noopener noreferrer" class="btn btn-large btn-terracotta"><i class="fa fa-map-marker-alt"></i> Visit Us Today</a>
+                        <a href="#menu" class="btn btn-large btn-outline-saffron"><i class="fa fa-utensils"></i> Explore Menu</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">26+</span>
+                            <span class="stat-label">Falooda Varieties</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">4.0 <i class="fa fa-star star-icon"></i></span>
+                            <span class="stat-label">Average Rating</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">₹350</span>
+                            <span class="stat-label">Price For Two</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-media">
+                    <div class="hero-dual-showcase">
+                        <div class="dual-card card-falooda">
+                            <img src="assets/falooda_hero.png" alt="Signature Falooda" class="dual-img">
+                            <div class="dual-label">Signature Falooda</div>
+                        </div>
+                        <div class="dual-card card-coldcoco">
+                            <img src="assets/cold_coco.png" alt="Original Cold Coco" class="dual-img">
+                            <div class="dual-label">Cold Coco Special</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="curved-divider-bottom">
+                <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                    <path d="M0,32L120,42.7C240,53,480,75,720,74.7C960,75,1200,53,1320,42.7L1440,32L1440,120L1320,120C1200,120,960,120,720,120C480,120,240,120,120,120L0,120Z" fill="var(--white)"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="menu-section py-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="tilak-divider">
+                        <!-- Custom hand-drawn falooda swirl glass divider -->
+                        <svg viewBox="0 0 100 120" width="24" height="28" class="tilak-divider-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M42 35 L30 10 L24 12" />
+                            <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                            <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                            <path d="M41 96 L33 104 L67 104 L59 96" />
+                        </svg>
+                    </div>
+                    <span class="section-tag saffron-text">Our Café Menu</span>
+                    <h2 class="section-title">Menu</h2>
+                    <p class="section-subtitle">Experience coffee-shop elegance. High-quality desserts crafted with pure love.</p>
+                </div>
+
+                <!-- Price and Diet Legend Banner -->
+                <div class="menu-alert-banner">
+                    <div class="alert-info-box">
+                        <i class="fa fa-info-circle"></i>
+                        <span><strong>Legend:</strong> Standard Veg (🟢). Prices listed are official and inclusive.</span>
+                    </div>
+                </div>
+
+                <!-- Café-Style Categories Stack -->
+                <div class="cafe-menu-container">
+                    
+                    <!-- 1. 🍨 Signature Falooda -->
+                    <div class="cafe-category-card">
+                        <div class="category-banner-wrapper">
+                            <img src="assets/falooda_hero.png" alt="Signature Falooda Banner" class="category-banner-img">
+                            <div class="category-overlay-banner">
+                                <h3 class="category-card-title">🍨 Signature Falooda</h3>
+                            </div>
+                        </div>
+                        <div class="category-menu-list">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Rose Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹80</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Kesar Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹100</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Mango Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹110</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Sitafal Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹150</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">King Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹180</span>
+                            </div>
+                            <div class="menu-item-row highlighted-row">
+                                <div class="menu-item-name-group">
+                                    <span class="menu-item-name">Hanumante Special Falooda <span class="veg-indicator">🟢</span></span>
+                                    <span class="badge-mini-bestseller gold-badge"><i class="fa fa-star"></i> Best Seller</span>
+                                </div>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹200</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Rabadi Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹220</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Surat Special Falooda <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹300</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. 🥤 Cold Coco Special -->
+                    <div class="cafe-category-card">
+                        <div class="category-banner-wrapper">
+                            <img src="assets/cold_coco.png" alt="Cold Coco Special Banner" class="category-banner-img">
+                            <div class="category-overlay-banner">
+                                <h3 class="category-card-title">🥤 Cold Coco Special</h3>
+                            </div>
+                        </div>
+                        <div class="category-menu-list">
+                            <div class="menu-item-row highlighted-row">
+                                <div class="menu-item-name-group">
+                                    <span class="menu-item-name">Cold Coco Special <span class="veg-indicator">🟢</span></span>
+                                    <span class="badge-mini-bestseller saffron-badge"><i class="fa fa-fire"></i> Best Seller</span>
+                                </div>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹50</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Chocolate Cold Coco <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹90</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Chocolate Chips Cold Coco <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹100</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Kaju Cold Coco <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹110</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Cold Coco with Ice Cream <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹80</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. 🥛 Premium Shakes -->
+                    <div class="cafe-category-card">
+                        <div class="category-banner-wrapper">
+                            <img src="assets/mango_falooda.png" alt="Premium Shakes Banner" class="category-banner-img">
+                            <div class="category-overlay-banner">
+                                <h3 class="category-card-title">🥛 Premium Shakes</h3>
+                            </div>
+                        </div>
+                        <div class="category-menu-list">
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Badam Shake <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹100</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Kaju Shake <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹110</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Kaju Badam Shake <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹120</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Kaju Anjir Shake <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹120</span>
+                            </div>
+                            <div class="menu-item-row">
+                                <span class="menu-item-name">Mix Dryfruit Shake <span class="veg-indicator">🟢</span></span>
+                                <span class="menu-item-leader"></span>
+                                <span class="menu-item-price">₹150</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- COLD COCO SHOWCASE SECTION -->
+        <section id="cold-coco-showcase" class="coldcoco-showcase-section py-section">
+            <div class="chocolate-wave-top">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                    <path d="M0,0 C240,40,480,80,720,80 C960,80,1200,40,1440,0 L1440,100 L0,100 Z" fill="var(--terracotta-maroon)"></path>
+                </svg>
+            </div>
+            
+            <div class="container cc-showcase-container">
+                <div class="cc-media-panel">
+                    <div class="cc-media-wrapper">
+                        <div class="splash-graphic"></div>
+                        <div class="floating-particle float-1"></div>
+                        <div class="floating-particle float-2"></div>
+                        <div class="floating-particle float-3"></div>
+                        <img src="assets/cold_coco.png" alt="Hanumante Cold Coco Special" class="cc-product-img">
+                    </div>
+                </div>
+                
+                <div class="cc-content-panel">
+                    <span class="badge badge-premium-gold text-white"><i class="fa-solid fa-fire"></i> Best Seller</span>
+                    <h2 class="cc-title">The One. <br>The Only. <br><span class="cc-highlight">Cold Coco.</span></h2>
+                    <p class="cc-desc">Mumbai's favourite chocolate indulgence since 1999.</p>
+                    <span class="cc-price-tag">Starting at ₹50</span>
+                    <a href="#menu" class="btn btn-large btn-saffron"><i class="fa fa-shopping-bag"></i> Try Today</a>
+                </div>
+            </div>
+            
+            <div class="chocolate-wave-bottom">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                    <path d="M0,100 C240,60,480,20,720,20 C960,20,1200,60,1440,100 L1440,0 L0,0 Z" fill="var(--terracotta-maroon)"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- LOCATIONS & HOURS SECTION -->
+        <section id="locations" class="locations-section py-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="tilak-divider">
+                        <svg viewBox="0 0 100 120" width="24" height="28" class="tilak-divider-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M42 35 L30 10 L24 12" />
+                            <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                            <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                            <path d="M41 96 L33 104 L67 104 L59 96" />
+                        </svg>
+                    </div>
+                    <span class="section-tag saffron-text">Visit Us Today</span>
+                    <h2 class="section-title">Find Your Nearest Hanumante</h2>
+                    <p class="section-subtitle">Swipe or scroll to find our branches. Direct tap for maps navigation.</p>
+                </div>
+
+                <div class="locations-layout">
+                    <div class="locations-list swipe-scroll-container">
+                        
+                        <!-- Mulund West (Active Map Card) -->
+                        <div class="location-card active" data-map-url="https://maps.google.com/maps?q=19.1711501,72.954318(Hanumante+Special+Fhaluda+Ice+Cream)&t=&z=17&ie=UTF8&iwloc=&output=embed" data-location-id="mulund-west">
+                            <div class="loc-card-header">
+                                <span class="tag-flagship"><i class="fa fa-star"></i> Flagship Store</span>
+                            </div>
+                            <h3>📍 Mulund West</h3>
+                            <p class="address">5XC3+FP8, Zaver Road, Pandit Jawaharlal Nehru Rd, Mulund West, Mumbai, Maharashtra 400080</p>
+                            <div class="loc-details">
+                                <div class="loc-info-row">
+                                    <i class="fa fa-clock"></i>
+                                    <span>Open until 12:30 AM <strong class="highlight-hours">(Late Night!)</strong></span>
+                                </div>
+                            </div>
+                            <div class="loc-actions flex-actions">
+                                <a href="tel:7878747024" class="btn btn-outline-terracotta btn-sm call-btn-outlet"><i class="fa fa-phone"></i> Call Now</a>
+                                <a href="https://maps.app.goo.gl/LnNvMhMv39eAqTy7A" target="_blank" rel="noopener noreferrer" class="btn btn-saffron btn-sm map-directions-btn"><i class="fa-solid fa-route"></i> Get Directions</a>
+                            </div>
+                        </div>
+
+                        <!-- Other Locations Plain Text Listing Box -->
+                        <div class="other-locations-box">
+                            <h3>Other Outlets</h3>
+                            <div class="other-loc-item">We also have an outlet at <strong>Mulund East</strong></div>
+                            <div class="other-loc-item">We also have an outlet at <strong>Malad East</strong></div>
+                            <div class="other-loc-item">We also have an outlet at <strong>Dadar West</strong></div>
+                            <div class="other-loc-item">We also have an outlet at <strong>Thane (Kasarvadavali)</strong></div>
+                            <div class="other-loc-item">We also have an outlet at <strong>Thane (Bloomville)</strong></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Interactive Google Map Frame -->
+                    <div class="map-view-container">
+                        <div class="map-loading-overlay" id="map-loader">
+                            <div class="spinner"></div>
+                            <p>Loading Outlet Map...</p>
+                        </div>
+                        <iframe 
+                            id="interactive-map-iframe"
+                            src="https://maps.google.com/maps?q=19.1711501,72.954318(Hanumante+Special+Fhaluda+Ice+Cream)&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Hanumante Google Map">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section id="about" class="about-section py-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="tilak-divider">
+                        <svg viewBox="0 0 100 120" width="24" height="28" class="tilak-divider-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M42 35 L30 10 L24 12" />
+                            <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                            <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                            <path d="M41 96 L33 104 L67 104 L59 96" />
+                        </svg>
+                    </div>
+                    <span class="section-tag saffron-text">Hamari Pehchan</span>
+                    <h2 class="section-title">26 Years of Pure Creaminess</h2>
+                    <p class="section-subtitle">A legacy built on devotion, taste, and the street-food culture of Mumbai.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-media">
+                        <img src="assets/shop_interior.png" alt="Hanumante Falooda Parlor Interior" class="about-img img-rounded shadow-lg">
+                        <div class="about-badge">
+                            <h3>26</h3>
+                            <p>Years of Sweet Trust</p>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <h3 class="about-heading">Humari Kahani (Our Brand Story)</h3>
+                        <p class="about-text">Starting our sweet journey 26 years ago on the vibrant streets of <strong>Mulund West</strong>, Hanumante Special Faluda Ice Cream has grown into a legendary dessert destination. Named in honor of Bajrang Bali, our work is our worship, and we serve each customer with devotional warmth and a sweet smile.</p>
+                        <p class="about-text">We make our own signature slow-cooked saffron syrups, rich cardamom rabri, and silky smooth cornstarch vermicelli daily to ensure pure taste. Every single glass represents 26 years of culinary perfection, family values, and authentic street-food legacy.</p>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa fa-ice-cream"></i></div>
+                                <div class="feature-info">
+                                    <h4>Legendary Rabri</h4>
+                                    <p>Made by boiling full-cream milk slowly for hours. Pure creaminess, no artificial thickening.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon"><i class="fa fa-shield-halved"></i></div>
+                                <div class="feature-info">
+                                    <h4>Quality & Hygiene</h4>
+                                    <p>We use premium dry fruits, branded fresh milk, and prepare items in sterile conditions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOMER REVIEWS SECTION -->
+        <section id="reviews" class="reviews-section py-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="tilak-divider">
+                        <svg viewBox="0 0 100 120" width="24" height="28" class="tilak-divider-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M42 35 L30 10 L24 12" />
+                            <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                            <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                            <path d="M41 96 L33 104 L67 104 L59 96" />
+                        </svg>
+                    </div>
+                    <span class="section-tag saffron-text">Kya Bolte Public</span>
+                    <h2 class="section-title">Customer Reviews</h2>
+                    <p class="section-subtitle">Real experiences shared by our beloved guests. Over 4.0/5 average rating across all platforms!</p>
+                </div>
+
+                <!-- Reviews Dashboard Layout -->
+                <div class="reviews-container">
+                    <div class="reviews-summary-card">
+                        <div class="average-rating-box">
+                            <span class="average-num">4.0</span>
+                            <span class="out-of">/ 5.0</span>
+                        </div>
+                        <div class="summary-stars">
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa fa-star star-filled"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class="rating-count">Based on 1,240+ Google & Swiggy Reviews</p>
+                        <hr>
+                        <div class="rating-bar-container">
+                            <div class="rating-bar-row">
+                                <span>5 ★</span>
+                                <div class="rating-progress-bg"><div class="rating-progress-fg" style="width: 70%"></div></div>
+                                <span>70%</span>
+                            </div>
+                            <div class="rating-bar-row">
+                                <span>4 ★</span>
+                                <div class="rating-progress-bg"><div class="rating-progress-fg" style="width: 15%"></div></div>
+                                <span>15%</span>
+                            </div>
+                            <div class="rating-bar-row">
+                                <span>3 ★</span>
+                                <div class="rating-progress-bg"><div class="rating-progress-fg" style="width: 10%"></div></div>
+                                <span>10%</span>
+                            </div>
+                            <div class="rating-bar-row">
+                                <span>2 ★</span>
+                                <div class="rating-progress-bg"><div class="rating-progress-fg" style="width: 3%"></div></div>
+                                <span>3%</span>
+                            </div>
+                            <div class="rating-bar-row">
+                                <span>1 ★</span>
+                                <div class="rating-progress-bg"><div class="rating-progress-fg" style="width: 2%"></div></div>
+                                <span>2%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-grid-cards">
+                        <!-- Review Card 1 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="reviewer-avatar">R</div>
+                                <div class="reviewer-info">
+                                    <h4>Rohan Mehta</h4>
+                                    <span class="review-date">1 week ago</span>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">"Hanumante Special Falooda is just mind blowing! Pure value for money. Mulund West outlet is always crowded but service is fast. Ekdum classic Mumbai street-food charm."</p>
+                        </div>
+
+                        <!-- Review Card 2 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="reviewer-avatar">S</div>
+                                <div class="reviewer-info">
+                                    <h4>Sneha Sawant</h4>
+                                    <span class="review-date">3 days ago</span>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">"Classic Badam Shake matches the same taste I remember from 10 years ago. Chilled, not too sweet, and packed with badam flakes. Great family-friendly spot in Dadar West."</p>
+                        </div>
+
+                        <!-- Review Card 3 -->
+                        <div class="review-card">
+                            <div class="review-card-header">
+                                <div class="reviewer-avatar">A</div>
+                                <div class="reviewer-info">
+                                    <h4>Amit Sharma</h4>
+                                    <span class="review-date">2 weeks ago</span>
+                                </div>
+                                <div class="review-stars">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">"Loved the Mango Falooda and the Badam Shake. Taste is 5-star!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section py-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="tilak-divider">
+                        <svg viewBox="0 0 100 120" width="24" height="28" class="tilak-divider-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M42 35 L30 10 L24 12" />
+                            <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                            <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                            <path d="M41 96 L33 104 L67 104 L59 96" />
+                        </svg>
+                    </div>
+                    <span class="section-tag saffron-text">Sampark Karein</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Reach out for catering inquiries, bulk orders, or customer support.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa fa-phone"></i></div>
+                            <div class="c-text">
+                                <h4>Phone Support</h4>
+                                <p><a href="tel:7878747024">7878747024</a> (General Inquiries & Franchise)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa fa-envelope"></i></div>
+                            <div class="c-text">
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:info@hanumantefalooda.com">info@hanumantefalooda.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="c-icon"><i class="fa fa-map-marker-alt"></i></div>
+                            <div class="c-text">
+                                <h4>Head Office</h4>
+                                <p><a href="https://maps.app.goo.gl/LnNvMhMv39eAqTy7A" target="_blank" rel="noopener noreferrer">5XC3+FP8, Zaver Road, Pandit Jawaharlal Nehru Rd, Mulund West, Mumbai, Maharashtra 400080</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Instagram Standalone Card -->
+                        <a href="https://www.instagram.com/_hanumante_icecream_1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="instagram-standalone-card">
+                            <div class="insta-card-icon-wrapper">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="insta-card-info">
+                                <span class="insta-card-tagline">Follow Our Journey</span>
+                                <h4 class="insta-card-handle">@_hanumante_icecream_1</h4>
+                                <p class="insta-card-desc">Join our community on Instagram for daily updates, behind-the-scenes, and special offers!</p>
+                            </div>
+                            <div class="insta-card-arrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="catering-box">
+                        <h3>🎉 Party & Catering Orders</h3>
+                        <p>Make your celebrations sweeter! We provide premium live catering counters for weddings, birthdays, corporate get-togethers, and family events across Mumbai & Thane.</p>
+                        <p>Choose from our curated varieties. Our team sets up, serves, and cleans up, leaving you to enjoy your event.</p>
+                        <a href="tel:7878747024" class="btn btn-saffron btn-large"><i class="fa fa-phone"></i> Call for Catering Info</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- STICKY BOTTOM NAVIGATION BAR FOR MOBILE-FIRST FEEL -->
+    <div class="sticky-bottom-navbar">
+        <a href="#home" class="sticky-nav-item">
+            <i class="fa fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#menu" class="sticky-nav-item">
+            <i class="fa fa-book-open"></i>
+            <span>Menu</span>
+        </a>
+        <a href="#locations" class="sticky-nav-item">
+            <i class="fa fa-map-location-dot"></i>
+            <span>Locations</span>
+        </a>
+        <a href="tel:7878747024" class="sticky-nav-item">
+            <i class="fa fa-phone"></i>
+            <span>Call Us</span>
+        </a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            
+            <div class="footer-col-about">
+                <div class="logo-area light">
+                    <svg viewBox="0 0 100 120" width="30" height="35" class="tilak-logo-icon" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M42 35 L30 10 L24 12" />
+                        <path d="M42 45 C48 38, 56 38, 60 45 C64 52, 44 58, 48 70 C52 82, 46 82, 50 86" />
+                        <path d="M28 25 L38 90 C38 94, 41 96, 45 96 L55 96 C59 96, 62 94, 62 90 L72 25 Z" />
+                        <path d="M41 96 L33 104 L67 104 L59 96" />
+                    </svg>
+                    <span class="logo-brand text-white">HANUMANTE</span>
+                </div>
+                <p class="footer-desc">Crafting pure happiness and curated Mumbai street-style Faloodas for 26 years. Devotion to taste, quality, and hospitality since 1999.</p>
+                <p class="footer-hours"><i class="fa fa-clock"></i> <strong>Mulund West:</strong> Closes at 12:30 AM</p>
+                <div class="footer-rating">
+                    <i class="fa fa-star star-filled"></i>
+                    <i class="fa fa-star star-filled"></i>
+                    <i class="fa fa-star star-filled"></i>
+                    <i class="fa fa-star star-filled"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span><strong>4.0 / 5.0 Average</strong></span>
+                </div>
+            </div>
+
+            <div class="footer-col-links">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Digital Menu</a></li>
+                    <li><a href="#locations">Locations & Hours</a></li>
+                    <li><a href="#about">About Our Legacy</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-outlets">
+                <h4>Our Branches</h4>
+                <ul class="footer-branches">
+                    <li><strong>Mulund West (Flagship):</strong> <a href="https://maps.app.goo.gl/LnNvMhMv39eAqTy7A" target="_blank" rel="noopener noreferrer">5XC3+FP8, Zaver Road, Mulund West</a> <br><a href="tel:7878747024"><i class="fa fa-phone"></i> 7878747024</a></li>
+                    <li>We also have an outlet at <strong>Mulund East</strong></li>
+                    <li>We also have an outlet at <strong>Malad East</strong></li>
+                    <li>We also have an outlet at <strong>Dadar West</strong></li>
+                    <li>We also have an outlet at <strong>Thane (Kasarvadavali)</strong></li>
+                    <li>We also have an outlet at <strong>Thane (Bloomville)</strong></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-map">
+                <h4>Find Us</h4>
+                <div class="footer-map-wrapper">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=19.1711501,72.954318(Hanumante+Special+Fhaluda+Ice+Cream)&t=&z=17&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="130" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        title="Footer Outlet Map">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Hanumante Special Faluda Ice Cream. All Rights Reserved.</p>
+                <div class="legal-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Code -->
+    <script src="app.js"></script>
+</body>
+</html>
