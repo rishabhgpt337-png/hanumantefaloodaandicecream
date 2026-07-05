@@ -110,51 +110,7 @@ img {
     display: block;
 }
 
-/* --- 2. CSS NOISE GRAIN OVERLAY & ABSTRACT BLOBS --- */
-.grain-overlay {
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-    opacity: 0.02;
-    pointer-events: none;
-    z-index: 9999;
-}
 
-.abstract-blob {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.15;
-    z-index: -1;
-    pointer-events: none;
-    animation: floatingBlobs 12s infinite alternate ease-in-out;
-}
-
-.blob-orange-1 {
-    width: 500px;
-    height: 500px;
-    background-color: var(--saffron-orange);
-    top: 5%;
-    left: -150px;
-}
-
-.blob-orange-2 {
-    width: 400px;
-    height: 400px;
-    background-color: var(--saffron-orange);
-    bottom: 10%;
-    right: -100px;
-    animation-delay: -3s;
-}
-
-.blob-pink-1 {
-    width: 600px;
-    height: 600px;
-    background-color: var(--falooda-pink);
-    top: 35%;
-    right: 5%;
-    animation-delay: -6s;
-}
 
 /* Scroll Progress Bar */
 #scroll-progress {
@@ -747,28 +703,28 @@ img {
 .hero-dual-showcase {
     position: relative;
     width: 100%;
-    height: 450px;
-    max-width: 440px;
+    display: flex;
+    gap: 24px;
+    max-width: 520px;
 }
 
 .dual-card {
-    position: absolute;
-    width: 250px;
+    position: relative;
+    width: calc(50% - 12px);
     background-color: var(--white);
     border-radius: var(--radius-card);
     padding: 16px;
-    box-shadow: var(--shadow-premium-lg);
-    border: 4px solid var(--white);
-    outline: 1px solid var(--border-light);
-    transition: all var(--transition-bounce);
+    box-shadow: var(--shadow-premium-md);
+    border: 1px solid var(--border-light);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
     cursor: pointer;
 }
 
 .dual-img {
     width: 100%;
-    height: 250px;
+    height: 180px;
     object-fit: cover;
-    border-radius: calc(var(--radius-card) - 2px);
+    border-radius: calc(var(--radius-card) - 4px);
     margin-bottom: 12px;
 }
 
@@ -780,24 +736,9 @@ img {
     font-size: 1.05rem;
 }
 
-.card-falooda {
-    top: 5%;
-    left: 0;
-    transform: rotate(-6deg);
-    z-index: 10;
-}
-
-.card-coldcoco {
-    bottom: 5%;
-    right: 0;
-    transform: rotate(6deg);
-    z-index: 5;
-}
-
 .dual-card:hover {
-    z-index: 20;
-    transform: translateY(-10px) rotate(0deg) scale(1.04);
-    box-shadow: 0 30px 60px rgba(74, 44, 29, 0.18);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-premium-lg);
 }
 
 /* ==========================================================================
@@ -1065,31 +1006,7 @@ img {
     position: relative;
 }
 
-/* Chocolate Splash Graphics & Floating Particles */
-.splash-graphic {
-    position: absolute;
-    top: -20px;
-    left: -30px;
-    right: -30px;
-    bottom: -20px;
-    background: radial-gradient(circle, rgba(139, 69, 19, 0.3) 0%, transparent 70%);
-    z-index: 1;
-    pointer-events: none;
-}
 
-.floating-particle {
-    position: absolute;
-    background-color: #3d2314;
-    border-radius: 4px;
-    z-index: 3;
-    pointer-events: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    animation: floatChocolate 4s infinite ease-in-out alternate;
-}
-
-.float-1 { width: 24px; height: 24px; top: 15%; left: -10%; transform: rotate(15deg); }
-.float-2 { width: 30px; height: 18px; bottom: 20%; right: -8%; transform: rotate(-25deg); animation-delay: -1.5s; }
-.float-3 { width: 16px; height: 16px; top: 70%; left: -5%; transform: rotate(45deg); animation-delay: -3s; }
 
 .cc-content-panel {
     display: flex;
@@ -2562,13 +2479,15 @@ img {
     }
     .hero-dual-showcase {
         margin: 0 auto;
-        height: 380px;
+        height: auto;
+        max-width: 500px;
+        gap: 16px;
     }
     .dual-card {
-        width: 220px;
+        width: calc(50% - 8px);
     }
     .dual-img {
-        height: 200px;
+        height: 180px;
     }
     .about-grid {
         grid-template-columns: 1fr;
@@ -2693,17 +2612,19 @@ img {
         gap: 20px;
     }
     .hero-dual-showcase {
-        height: 320px;
-        max-width: 320px;
+        height: auto;
+        max-width: 100%;
+        flex-direction: column;
+        gap: 16px;
     }
     .dual-card {
-        width: 180px;
-        border-radius: 20px;
-        padding: 12px;
+        width: 100%;
+        border-radius: var(--radius-card);
+        padding: 16px;
     }
     .dual-img {
-        height: 160px;
-        border-radius: 14px;
+        height: 200px;
+        border-radius: calc(var(--radius-card) - 4px);
     }
     .reels-grid {
         grid-template-columns: 1fr;
